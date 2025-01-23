@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "route": "/{*path}",
+      "rewrite": "/index.html"
+    },
+    {
+      "route": "/{section}/{*subpath}",
+      "rewrite": "/{section}/index.html"
+    }
+  ]
+}
