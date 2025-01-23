@@ -1,0 +1,6 @@
+# Redirigir index.html a la raíz sin mostrar el archivo
+DirectoryIndex index.html
+RewriteEngine On
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
+
